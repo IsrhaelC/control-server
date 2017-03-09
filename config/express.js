@@ -15,6 +15,13 @@ module.exports = function() {
     app.set('view engine', 'ejs');
     app.set('views','./app/views');
 
+    app.all('*', function(req, res, next) {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+        res.header('Access-Control-Allow-Headers', 'Content-Type');
+        next();
+    });
+
     load('models', {cwd: 'app'}).then('controllers').then('routes').into(app);
 
     return app;

@@ -1,0 +1,26 @@
+{
+  "name": "control-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsrhaelC/control-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsrhaelC/control-server/issues"
+  },
+  "homepage": "https://github.com/IsrhaelC/control-server#readme",
+  "dependencies": {
+    "body-parser": "^1.6.7",
+    "ejs": "^0.8.8",
+    "express": "^4.8.8",
+    "express-load": "^1.1.15",
+    "method-override": "^2.1.3"
+  }
+}

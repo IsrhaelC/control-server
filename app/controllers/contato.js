@@ -1,11 +1,4 @@
-var contatos = [
-    {_id: 1, nome: "Paulo", email: 'paulo@g.com', senha: '12345', date: '06/08/1994', cidade: 'Fortaleza'},
-    {_id: 2, nome: "João", email: 'joao@g.com', senha: '12345', date: '06/08/1994', cidade: 'Fortaleza'},
-    {_id: 3, nome: "Pedro", email: 'pedro@g.com', senha: '12345', date: '06/08/1994', cidade: 'Quixada'},
-    {_id: 4, nome: "Antonio", email: 'antonio@g.com', senha: '12345', date: '06/08/1994', cidade: 'São Paulo'},
-    {_id: 5, nome: "Marcos", email: 'marcos@g.com', senha: '12345', date: '06/08/1994', cidade: 'Rio de Janeiro'},
-    {_id: 6, nome: "Luis", email: 'luis@g.com', senha: '12345', date: '06/08/1994', cidade: 'Quixada'}
-    ];
+var contatos = [];
 
 
 module.exports = function () {
@@ -36,7 +29,6 @@ module.exports = function () {
         contatoNovo._id = ++ID_CONTATO_INC;
         contatos.push(contatoNovo);
         return contatoNovo;
-    };
-
+    }
     return controller;
 };
